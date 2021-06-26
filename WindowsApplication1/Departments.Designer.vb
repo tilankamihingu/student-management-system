@@ -26,30 +26,30 @@ Partial Class Departments
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Resetbtn = New System.Windows.Forms.Button()
+        Me.DeleteBtn = New System.Windows.Forms.Button()
+        Me.EditBtn = New System.Windows.Forms.Button()
+        Me.Savebtn = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.DescTb = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.DurationTb = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.DepNameTb = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
         Me.Panel2.SuspendLayout()
-        Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label12
@@ -98,45 +98,45 @@ Partial Class Departments
         Me.Button5.Text = "No Due List"
         Me.Button5.UseVisualStyleBackColor = False
         '
-        'Button4
+        'Resetbtn
         '
-        Me.Button4.BackColor = System.Drawing.Color.Gold
-        Me.Button4.Location = New System.Drawing.Point(717, 236)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
-        Me.Button4.TabIndex = 48
-        Me.Button4.Text = "Reset"
-        Me.Button4.UseVisualStyleBackColor = False
+        Me.Resetbtn.BackColor = System.Drawing.Color.Gold
+        Me.Resetbtn.Location = New System.Drawing.Point(717, 236)
+        Me.Resetbtn.Name = "Resetbtn"
+        Me.Resetbtn.Size = New System.Drawing.Size(75, 23)
+        Me.Resetbtn.TabIndex = 48
+        Me.Resetbtn.Text = "Reset"
+        Me.Resetbtn.UseVisualStyleBackColor = False
         '
-        'Button3
+        'DeleteBtn
         '
-        Me.Button3.BackColor = System.Drawing.Color.Gold
-        Me.Button3.Location = New System.Drawing.Point(590, 236)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 47
-        Me.Button3.Text = "Delete"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.DeleteBtn.BackColor = System.Drawing.Color.Gold
+        Me.DeleteBtn.Location = New System.Drawing.Point(590, 236)
+        Me.DeleteBtn.Name = "DeleteBtn"
+        Me.DeleteBtn.Size = New System.Drawing.Size(75, 23)
+        Me.DeleteBtn.TabIndex = 47
+        Me.DeleteBtn.Text = "Delete"
+        Me.DeleteBtn.UseVisualStyleBackColor = False
         '
-        'Button2
+        'EditBtn
         '
-        Me.Button2.BackColor = System.Drawing.Color.Gold
-        Me.Button2.Location = New System.Drawing.Point(466, 236)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 46
-        Me.Button2.Text = "Edit"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.EditBtn.BackColor = System.Drawing.Color.Gold
+        Me.EditBtn.Location = New System.Drawing.Point(466, 236)
+        Me.EditBtn.Name = "EditBtn"
+        Me.EditBtn.Size = New System.Drawing.Size(75, 23)
+        Me.EditBtn.TabIndex = 46
+        Me.EditBtn.Text = "Edit"
+        Me.EditBtn.UseVisualStyleBackColor = False
         '
-        'Button1
+        'Savebtn
         '
-        Me.Button1.BackColor = System.Drawing.Color.Gold
-        Me.Button1.Location = New System.Drawing.Point(331, 236)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 45
-        Me.Button1.Text = "Save"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.Savebtn.BackColor = System.Drawing.Color.Gold
+        Me.Savebtn.Location = New System.Drawing.Point(331, 236)
+        Me.Savebtn.Name = "Savebtn"
+        Me.Savebtn.Size = New System.Drawing.Size(75, 23)
+        Me.Savebtn.TabIndex = 45
+        Me.Savebtn.Text = "Save"
+        Me.Savebtn.UseVisualStyleBackColor = False
         '
         'DataGridView1
         '
@@ -159,14 +159,14 @@ Partial Class Departments
         Me.Label9.TabIndex = 31
         Me.Label9.Text = "Students List"
         '
-        'TextBox3
+        'DescTb
         '
-        Me.TextBox3.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(489, 120)
-        Me.TextBox3.Multiline = True
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(176, 81)
-        Me.TextBox3.TabIndex = 43
+        Me.DescTb.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DescTb.Location = New System.Drawing.Point(489, 120)
+        Me.DescTb.Multiline = True
+        Me.DescTb.Name = "DescTb"
+        Me.DescTb.Size = New System.Drawing.Size(176, 81)
+        Me.DescTb.TabIndex = 43
         '
         'Label8
         '
@@ -189,13 +189,13 @@ Partial Class Departments
         Me.Label13.TabIndex = 11
         Me.Label13.Text = "DashBoard"
         '
-        'TextBox2
+        'DurationTb
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(694, 120)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(176, 27)
-        Me.TextBox2.TabIndex = 39
+        Me.DurationTb.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DurationTb.Location = New System.Drawing.Point(694, 120)
+        Me.DurationTb.Name = "DurationTb"
+        Me.DurationTb.Size = New System.Drawing.Size(176, 27)
+        Me.DurationTb.TabIndex = 39
         '
         'Label6
         '
@@ -207,13 +207,13 @@ Partial Class Departments
         Me.Label6.TabIndex = 38
         Me.Label6.Text = "Duration"
         '
-        'TextBox1
+        'DepNameTb
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(280, 120)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(176, 27)
-        Me.TextBox1.TabIndex = 33
+        Me.DepNameTb.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DepNameTb.Location = New System.Drawing.Point(280, 120)
+        Me.DepNameTb.Name = "DepNameTb"
+        Me.DepNameTb.Size = New System.Drawing.Size(176, 27)
+        Me.DepNameTb.TabIndex = 33
         '
         'Label3
         '
@@ -268,6 +268,16 @@ Partial Class Departments
         Me.Panel2.Size = New System.Drawing.Size(243, 64)
         Me.Panel2.TabIndex = 1
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.WindowsApplication1.My.Resources.Resources.plan_removebg_preview
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 10)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(61, 49)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 3
+        Me.PictureBox1.TabStop = False
+        '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.DarkBlue
@@ -282,33 +292,23 @@ Partial Class Departments
         Me.Panel1.Size = New System.Drawing.Size(243, 621)
         Me.Panel1.TabIndex = 29
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.WindowsApplication1.My.Resources.Resources.plan_removebg_preview
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 10)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(61, 49)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 3
-        Me.PictureBox1.TabStop = False
-        '
         'Departments
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(934, 621)
         Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Resetbtn)
+        Me.Controls.Add(Me.DeleteBtn)
+        Me.Controls.Add(Me.EditBtn)
+        Me.Controls.Add(Me.Savebtn)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.DescTb)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.DurationTb)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.DepNameTb)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Panel1)
@@ -321,9 +321,9 @@ Partial Class Departments
         Me.Panel4.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -333,18 +333,18 @@ Partial Class Departments
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents Button5 As System.Windows.Forms.Button
-    Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Resetbtn As System.Windows.Forms.Button
+    Friend WithEvents DeleteBtn As System.Windows.Forms.Button
+    Friend WithEvents EditBtn As System.Windows.Forms.Button
+    Friend WithEvents Savebtn As System.Windows.Forms.Button
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
     Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents DescTb As System.Windows.Forms.TextBox
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label13 As System.Windows.Forms.Label
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents DurationTb As System.Windows.Forms.TextBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents DepNameTb As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Panel4 As System.Windows.Forms.Panel
