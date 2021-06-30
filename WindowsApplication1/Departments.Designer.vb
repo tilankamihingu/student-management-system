@@ -39,17 +39,17 @@ Partial Class Departments
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.DepartmentDGV = New System.Windows.Forms.DataGridView()
         Me.Panel4.SuspendLayout()
-        Me.Panel2.SuspendLayout()
-        Me.Panel1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         CType(Me.DepartmentDGV, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -181,9 +181,9 @@ Partial Class Departments
         Me.Label6.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.Location = New System.Drawing.Point(697, 89)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(89, 22)
+        Me.Label6.Size = New System.Drawing.Size(163, 22)
         Me.Label6.TabIndex = 38
-        Me.Label6.Text = "Duration"
+        Me.Label6.Text = "Duration in Years"
         '
         'DepNameTb
         '
@@ -225,6 +225,16 @@ Partial Class Departments
         Me.Panel4.Size = New System.Drawing.Size(691, 64)
         Me.Panel4.TabIndex = 30
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.WindowsApplication1.My.Resources.Resources.closei
+        Me.PictureBox2.Location = New System.Drawing.Point(639, 16)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(40, 33)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 50
+        Me.PictureBox2.TabStop = False
+        '
         'Label2
         '
         Me.Label2.AutoSize = True
@@ -247,6 +257,16 @@ Partial Class Departments
         Me.Panel2.Size = New System.Drawing.Size(243, 64)
         Me.Panel2.TabIndex = 1
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.WindowsApplication1.My.Resources.Resources.plan_removebg_preview
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 10)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(61, 49)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 3
+        Me.PictureBox1.TabStop = False
+        '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.DarkBlue
@@ -260,26 +280,6 @@ Partial Class Departments
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(243, 621)
         Me.Panel1.TabIndex = 29
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = Global.WindowsApplication1.My.Resources.Resources.closei
-        Me.PictureBox2.Location = New System.Drawing.Point(639, 16)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(40, 33)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 50
-        Me.PictureBox2.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.WindowsApplication1.My.Resources.Resources.plan_removebg_preview
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 10)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(61, 49)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 3
-        Me.PictureBox1.TabStop = False
         '
         'DepartmentDGV
         '
@@ -316,12 +316,12 @@ Partial Class Departments
         Me.Text = "Departments"
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DepartmentDGV, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

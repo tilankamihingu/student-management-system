@@ -25,7 +25,7 @@ Public Class Departments
 
             Try
                 Con.Open()
-                Dim query = "insert into DepartmentTbl values('" & DepNameTb.Text & "', '" & DescTb.Text & "', '" & DurationTb.Text & "')"
+                Dim query = "insert into DepartmentTbl values('" & DepNameTb.Text & "', '" & DescTb.Text & "', " & DurationTb.Text & ")"
                 Dim cmd As SqlCommand
                 cmd = New SqlCommand(query, Con)
                 cmd.ExecuteNonQuery()
@@ -89,6 +89,30 @@ Public Class Departments
             key = 0
         Else
             key = Convert.ToInt32(row.Cells(0).Value.ToString)
+        End If
+    End Sub
+
+    Private Sub EditBtn_Click(sender As Object, e As EventArgs) Handles EditBtn.Click
+        If DepNameTb.Text = "" Or DescTb.Text = "" Or DurationTb.Text = "" Then
+
+            MsgBox("Missing Informatin")
+
+        Else
+
+            Try
+                Con.Open()
+                Dim query = "update departmentTbl set DepName='" & DepNameTb.Text & "',DepDesc='" & DescTb.Text & "',DepDur=" & DurationTb.Text & " where DepId= " & key & ""
+                Dim cmd As SqlCommand
+                cmd = New SqlCommand(query, Con)
+                cmd.ExecuteNonQuery()
+                MsgBox("Department Updated")
+                Con.Close()
+                Display()
+                Reset()
+            Catch ex As Exception
+                MsgBox(ex.Message)
+            End Try
+
         End If
     End Sub
 End Class
