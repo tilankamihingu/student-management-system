@@ -63,7 +63,26 @@ Public Class student
         StudentDGV.DataSource = ds.Tables(0)
         Con.Close()
     End Sub
-    Private Sub 
+    Private Sub NoDueList()
+        Con.Open()
+        Dim query = "select * from StudentTbl where StFees >= 100000"
+        Dim adapter As SqlDataAdapter
+        Dim cmd = New SqlCommand(query, Con)
+        adapter = New SqlDataAdapter(cmd)
+        Dim builder = New SqlCommandBuilder(adapter)
+        Dim ds As DataSet
+        ds = New DataSet
+        adapter.Fill(ds)
+        StudentDGV.DataSource = ds.Tables(0)
+        Con.Close()
+    End Sub
+    Private Sub Clear()
+        StnameTb.Text = ""
+        FeesTb.Text = ""
+        PhoneTb.Text = ""
+        GenCb.SelectedIndex = 0
+        DepCb.SelectedIndex = 0
+    End Sub
     Private Sub SaveBtn_Click(sender As Object, e As EventArgs) Handles SaveBtn.Click
         If StnameTb.Text = "" Or FeesTb.Text = "" Or PhoneTb.Text = "" Or GenCb.SelectedIndex = -1 Or DepCb.SelectedIndex = -1 Then
 
@@ -80,7 +99,7 @@ Public Class student
                 MsgBox("Student Saved")
                 Con.Close()
                 Display()
-
+                Clear()
             Catch ex As Exception
                 MsgBox(ex.Message)
             End Try
@@ -90,5 +109,80 @@ Public Class student
 
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
         Application.Exit()
+    End Sub
+
+    Private Sub ResetBtn_Click(sender As Object, e As EventArgs) Handles ResetBtn.Click
+        Clear()
+    End Sub
+    Dim key = 0
+    Private Sub StudentDGV_CellMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles StudentDGV.CellMouseClick
+        Dim row As DataGridViewRow = StudentDGV.Rows(e.RowIndex)
+        StnameTb.Text = row.Cells(1).Value.ToString
+        GenCb.SelectedItem = row.Cells(2).Value.ToString
+        STDOB.Text = row.Cells(3).Value.ToString
+        PhoneTb.Text = row.Cells(4).Value.ToString
+        DepCb.SelectedValue = row.Cells(5).Value.ToString
+        FeesTb.Text = row.Cells(6).Value.ToString
+        If StnameTb.Text = "" Then
+            key = 0
+        Else
+            key = Convert.ToInt32(row.Cells(0).Value.ToString)
+        End If
+    End Sub
+
+    Private Sub DeleteBtn_Click(sender As Object, e As EventArgs) Handles DeleteBtn.Click
+        If key = 0 Then
+
+            MsgBox("Select the Student")
+
+        Else
+
+            Try
+                Con.Open()
+                Dim query = "delete from StudentTbl where StId = " & key & ""
+                Dim cmd As SqlCommand
+                cmd = New SqlCommand(query, Con)
+                cmd.ExecuteNonQuery()
+                MsgBox("Student Deleted")
+                Con.Close()
+                Display()
+                Clear()
+            Catch ex As Exception
+                MsgBox(ex.Message)
+            End Try
+
+        End If
+    End Sub
+
+    Private Sub EditBtn_Click(sender As Object, e As EventArgs) Handles EditBtn.Click
+        If StnameTb.Text = "" Or FeesTb.Text = "" Or PhoneTb.Text = "" Or GenCb.SelectedIndex = -1 Or DepCb.SelectedIndex = -1 Then
+
+            MsgBox("Missing Informatin")
+
+        Else
+
+            Try
+                Con.Open()
+                Dim query = "update StudentTbl set StName='" & StnameTb.Text & "',StGender='" & GenCb.SelectedItem.ToString() & "',StDOB='" & STDOB.Text & "',StPhone='" & PhoneTb.Text & "',StDep='" & DepCb.SelectedValue.ToString() & "',StFees=" & FeesTb.Text & " where Stid= " & key & ""
+                Dim cmd As SqlCommand
+                cmd = New SqlCommand(query, Con)
+                cmd.ExecuteNonQuery()
+                MsgBox("Student Updated")
+                Con.Close()
+                Display()
+                Clear()
+            Catch ex As Exception
+                MsgBox(ex.Message)
+            End Try
+
+        End If
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        NoDueList()
+    End Sub
+
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+        Display()
     End Sub
 End Class
