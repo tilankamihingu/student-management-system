@@ -38,20 +38,18 @@ Partial Class Fees
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.EditBtn = New System.Windows.Forms.Button()
         Me.PayBtn = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         CType(Me.FeesDGV, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label12
@@ -217,6 +215,16 @@ Partial Class Fees
         Me.Panel4.Size = New System.Drawing.Size(691, 64)
         Me.Panel4.TabIndex = 30
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.WindowsApplication1.My.Resources.Resources.closei
+        Me.PictureBox2.Location = New System.Drawing.Point(639, 16)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(40, 33)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 52
+        Me.PictureBox2.TabStop = False
+        '
         'Label2
         '
         Me.Label2.AutoSize = True
@@ -263,54 +271,22 @@ Partial Class Fees
         Me.Panel1.Size = New System.Drawing.Size(243, 621)
         Me.Panel1.TabIndex = 29
         '
-        'EditBtn
-        '
-        Me.EditBtn.BackColor = System.Drawing.Color.Gold
-        Me.EditBtn.Location = New System.Drawing.Point(327, 264)
-        Me.EditBtn.Name = "EditBtn"
-        Me.EditBtn.Size = New System.Drawing.Size(75, 23)
-        Me.EditBtn.TabIndex = 47
-        Me.EditBtn.Text = "Edit"
-        Me.EditBtn.UseVisualStyleBackColor = False
-        '
         'PayBtn
         '
         Me.PayBtn.BackColor = System.Drawing.Color.Gold
-        Me.PayBtn.Location = New System.Drawing.Point(547, 264)
+        Me.PayBtn.Location = New System.Drawing.Point(521, 250)
         Me.PayBtn.Name = "PayBtn"
-        Me.PayBtn.Size = New System.Drawing.Size(75, 23)
+        Me.PayBtn.Size = New System.Drawing.Size(117, 30)
         Me.PayBtn.TabIndex = 48
         Me.PayBtn.Text = "Pay"
         Me.PayBtn.UseVisualStyleBackColor = False
-        '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.Gold
-        Me.Button2.Location = New System.Drawing.Point(732, 264)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(123, 23)
-        Me.Button2.TabIndex = 49
-        Me.Button2.Text = "Cancel Payment"
-        Me.Button2.UseVisualStyleBackColor = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = Global.WindowsApplication1.My.Resources.Resources.closei
-        Me.PictureBox2.Location = New System.Drawing.Point(639, 16)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(40, 33)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 52
-        Me.PictureBox2.TabStop = False
         '
         'Fees
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(934, 621)
-        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.PayBtn)
-        Me.Controls.Add(Me.EditBtn)
         Me.Controls.Add(Me.FeesDGV)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.AmountTb)
@@ -330,12 +306,12 @@ Partial Class Fees
         CType(Me.FeesDGV, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -360,8 +336,6 @@ Partial Class Fees
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
-    Friend WithEvents EditBtn As System.Windows.Forms.Button
     Friend WithEvents PayBtn As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
 End Class

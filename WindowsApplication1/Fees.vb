@@ -32,6 +32,19 @@ Public Class Fees
         StNameTb.Text = ""
         StIdCb.SelectedIndex = -1
     End Sub
+    Private Sub UpdateStudent()
+        Try
+            Con.Open()
+            Dim query = "update StudentTbl set StFees=" & AmountTb.Text & " where Stid= " & StIdCb.SelectedValue.ToString() & ""
+            Dim cmd As SqlCommand
+            cmd = New SqlCommand(query, Con)
+            cmd.ExecuteNonQuery()
+            MsgBox("Student Updated")
+            Con.Close()
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
     Private Sub PayBtn_Click(sender As Object, e As EventArgs) Handles PayBtn.Click
         If StNameTb.Text = "" Or AmountTb.Text = "" Then
 
@@ -42,13 +55,14 @@ Public Class Fees
 
             Try
                 Con.Open()
-                Dim query = "insert into PaymentTbl values(" & StIdCb.SelectedValue.ToString() & ",'" & StNameTb.Text & "', '" & Period.Value.Date.Year & "', " & AmountTb.Text & ")"
+                Dim query = "insert into PaymentTbl values(" & StIdCb.SelectedValue.ToString() & ",'" & StNameTb.Text & "', '" & Period.Value.Date & "', " & AmountTb.Text & ")"
                 Dim cmd As SqlCommand
                 cmd = New SqlCommand(query, Con)
                 cmd.ExecuteNonQuery()
                 MsgBox("Payment Successfull")
                 Con.Close()
                 Display()
+                UpdateStudent()
                 Clear()
             Catch ex As Exception
                 MsgBox(ex.Message)
@@ -79,5 +93,9 @@ Public Class Fees
 
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
         Application.Exit()
+    End Sub
+
+    Private Sub EditBtn_Click(sender As Object, e As EventArgs)
+
     End Sub
 End Class
