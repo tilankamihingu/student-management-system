@@ -22,8 +22,10 @@ Partial Class splash
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
+        Me.LoadingBar = New System.Windows.Forms.ProgressBar()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
         '
         'Label1
@@ -36,12 +38,15 @@ Partial Class splash
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Collage Management System"
         '
-        'ProgressBar1
+        'LoadingBar
         '
-        Me.ProgressBar1.Location = New System.Drawing.Point(60, 186)
-        Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(350, 10)
-        Me.ProgressBar1.TabIndex = 1
+        Me.LoadingBar.Location = New System.Drawing.Point(60, 186)
+        Me.LoadingBar.Name = "LoadingBar"
+        Me.LoadingBar.Size = New System.Drawing.Size(350, 10)
+        Me.LoadingBar.TabIndex = 1
+        '
+        'Timer1
+        '
         '
         'splash
         '
@@ -49,7 +54,7 @@ Partial Class splash
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Gold
         Me.ClientSize = New System.Drawing.Size(463, 259)
-        Me.Controls.Add(Me.ProgressBar1)
+        Me.Controls.Add(Me.LoadingBar)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "splash"
@@ -60,6 +65,7 @@ Partial Class splash
 
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents ProgressBar1 As System.Windows.Forms.ProgressBar
+    Friend WithEvents LoadingBar As System.Windows.Forms.ProgressBar
+    Friend WithEvents Timer1 As System.Windows.Forms.Timer
 
 End Class
