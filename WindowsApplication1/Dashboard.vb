@@ -84,4 +84,8 @@ Public Class Dashboard
         Obj.Show()
         Me.Hide()
     End Sub
+
+    Private Sub StdLbl_Click(sender As Object, e As EventArgs) Handles StdLbl.Click
+
+    End Sub
 End Class
