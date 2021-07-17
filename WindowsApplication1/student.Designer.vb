@@ -29,9 +29,7 @@ Partial Class student
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.StnameTb = New System.Windows.Forms.TextBox()
@@ -53,20 +51,34 @@ Partial Class student
         Me.ResetBtn = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.StudentDGV, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.DarkBlue
+        Me.Panel1.Controls.Add(Me.PictureBox8)
+        Me.Panel1.Controls.Add(Me.PictureBox7)
+        Me.Panel1.Controls.Add(Me.PictureBox6)
+        Me.Panel1.Controls.Add(Me.PictureBox5)
         Me.Panel1.Controls.Add(Me.PictureBox4)
         Me.Panel1.Controls.Add(Me.Label13)
         Me.Panel1.Controls.Add(Me.Label12)
@@ -76,7 +88,7 @@ Partial Class student
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(243, 621)
+        Me.Panel1.Size = New System.Drawing.Size(243, 623)
         Me.Panel1.TabIndex = 0
         '
         'Label13
@@ -84,7 +96,7 @@ Partial Class student
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.Color.White
-        Me.Label13.Location = New System.Drawing.Point(83, 264)
+        Me.Label13.Location = New System.Drawing.Point(83, 310)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(141, 30)
         Me.Label13.TabIndex = 11
@@ -95,7 +107,7 @@ Partial Class student
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(83, 213)
+        Me.Label12.Location = New System.Drawing.Point(83, 244)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(67, 30)
         Me.Label12.TabIndex = 10
@@ -106,7 +118,7 @@ Partial Class student
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.White
-        Me.Label11.Location = New System.Drawing.Point(81, 156)
+        Me.Label11.Location = New System.Drawing.Point(83, 164)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(157, 30)
         Me.Label11.TabIndex = 9
@@ -117,7 +129,7 @@ Partial Class student
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(81, 89)
+        Me.Label10.Location = New System.Drawing.Point(83, 97)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(120, 30)
         Me.Label10.TabIndex = 8
@@ -145,16 +157,6 @@ Partial Class student
         Me.Label2.TabIndex = 6
         Me.Label2.Text = "Bojuna"
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.WindowsApplication1.My.Resources.Resources.plan_removebg_preview
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 10)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(61, 49)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 3
-        Me.PictureBox1.TabStop = False
-        '
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.White
@@ -163,18 +165,8 @@ Partial Class student
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel4.Location = New System.Drawing.Point(243, 0)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(691, 64)
+        Me.Panel4.Size = New System.Drawing.Size(858, 64)
         Me.Panel4.TabIndex = 2
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = Global.WindowsApplication1.My.Resources.Resources.closei
-        Me.PictureBox2.Location = New System.Drawing.Point(639, 16)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(40, 33)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 51
-        Me.PictureBox2.TabStop = False
         '
         'Label1
         '
@@ -191,7 +183,7 @@ Partial Class student
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(283, 89)
+        Me.Label3.Location = New System.Drawing.Point(296, 89)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(66, 22)
         Me.Label3.TabIndex = 10
@@ -200,7 +192,7 @@ Partial Class student
         'StnameTb
         '
         Me.StnameTb.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.StnameTb.Location = New System.Drawing.Point(280, 120)
+        Me.StnameTb.Location = New System.Drawing.Point(300, 118)
         Me.StnameTb.Name = "StnameTb"
         Me.StnameTb.Size = New System.Drawing.Size(176, 27)
         Me.StnameTb.TabIndex = 11
@@ -210,7 +202,7 @@ Partial Class student
         Me.GenCb.Font = New System.Drawing.Font("Century Gothic", 14.25!)
         Me.GenCb.FormattingEnabled = True
         Me.GenCb.Items.AddRange(New Object() {"Male", "Female"})
-        Me.GenCb.Location = New System.Drawing.Point(489, 117)
+        Me.GenCb.Location = New System.Drawing.Point(584, 118)
         Me.GenCb.Name = "GenCb"
         Me.GenCb.Size = New System.Drawing.Size(176, 30)
         Me.GenCb.TabIndex = 12
@@ -219,7 +211,7 @@ Partial Class student
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(491, 89)
+        Me.Label4.Location = New System.Drawing.Point(580, 89)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(82, 22)
         Me.Label4.TabIndex = 13
@@ -229,7 +221,7 @@ Partial Class student
         '
         Me.STDOB.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.STDOB.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.STDOB.Location = New System.Drawing.Point(695, 116)
+        Me.STDOB.Location = New System.Drawing.Point(869, 117)
         Me.STDOB.Name = "STDOB"
         Me.STDOB.Size = New System.Drawing.Size(136, 27)
         Me.STDOB.TabIndex = 15
@@ -238,7 +230,7 @@ Partial Class student
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(698, 89)
+        Me.Label5.Location = New System.Drawing.Point(865, 89)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(52, 22)
         Me.Label5.TabIndex = 16
@@ -248,7 +240,7 @@ Partial Class student
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(697, 164)
+        Me.Label6.Location = New System.Drawing.Point(865, 164)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(69, 22)
         Me.Label6.TabIndex = 17
@@ -257,7 +249,7 @@ Partial Class student
         'PhoneTb
         '
         Me.PhoneTb.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PhoneTb.Location = New System.Drawing.Point(694, 195)
+        Me.PhoneTb.Location = New System.Drawing.Point(869, 196)
         Me.PhoneTb.Name = "PhoneTb"
         Me.PhoneTb.Size = New System.Drawing.Size(176, 27)
         Me.PhoneTb.TabIndex = 18
@@ -266,7 +258,7 @@ Partial Class student
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(283, 164)
+        Me.Label7.Location = New System.Drawing.Point(296, 164)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(123, 22)
         Me.Label7.TabIndex = 19
@@ -277,7 +269,7 @@ Partial Class student
         Me.DepCb.Font = New System.Drawing.Font("Century Gothic", 14.25!)
         Me.DepCb.FormattingEnabled = True
         Me.DepCb.Items.AddRange(New Object() {"Male", "Female"})
-        Me.DepCb.Location = New System.Drawing.Point(280, 193)
+        Me.DepCb.Location = New System.Drawing.Point(300, 196)
         Me.DepCb.Name = "DepCb"
         Me.DepCb.Size = New System.Drawing.Size(170, 30)
         Me.DepCb.TabIndex = 20
@@ -286,7 +278,7 @@ Partial Class student
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(491, 164)
+        Me.Label8.Location = New System.Drawing.Point(582, 164)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(50, 22)
         Me.Label8.TabIndex = 21
@@ -295,7 +287,7 @@ Partial Class student
         'FeesTb
         '
         Me.FeesTb.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.FeesTb.Location = New System.Drawing.Point(489, 195)
+        Me.FeesTb.Location = New System.Drawing.Point(586, 196)
         Me.FeesTb.Name = "FeesTb"
         Me.FeesTb.Size = New System.Drawing.Size(176, 27)
         Me.FeesTb.TabIndex = 22
@@ -305,7 +297,7 @@ Partial Class student
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.DarkBlue
-        Me.Label9.Location = New System.Drawing.Point(517, 301)
+        Me.Label9.Location = New System.Drawing.Point(597, 297)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(130, 24)
         Me.Label9.TabIndex = 8
@@ -316,17 +308,20 @@ Partial Class student
         Me.StudentDGV.BackgroundColor = System.Drawing.Color.White
         Me.StudentDGV.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.StudentDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.StudentDGV.Location = New System.Drawing.Point(280, 369)
+        Me.StudentDGV.Location = New System.Drawing.Point(300, 370)
         Me.StudentDGV.Name = "StudentDGV"
-        Me.StudentDGV.Size = New System.Drawing.Size(626, 240)
+        Me.StudentDGV.Size = New System.Drawing.Size(745, 240)
         Me.StudentDGV.TabIndex = 23
         '
         'SaveBtn
         '
         Me.SaveBtn.BackColor = System.Drawing.Color.Gold
-        Me.SaveBtn.Location = New System.Drawing.Point(331, 255)
+        Me.SaveBtn.FlatAppearance.BorderSize = 0
+        Me.SaveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.SaveBtn.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SaveBtn.Location = New System.Drawing.Point(312, 255)
         Me.SaveBtn.Name = "SaveBtn"
-        Me.SaveBtn.Size = New System.Drawing.Size(75, 23)
+        Me.SaveBtn.Size = New System.Drawing.Size(128, 32)
         Me.SaveBtn.TabIndex = 24
         Me.SaveBtn.Text = "Save"
         Me.SaveBtn.UseVisualStyleBackColor = False
@@ -334,9 +329,12 @@ Partial Class student
         'EditBtn
         '
         Me.EditBtn.BackColor = System.Drawing.Color.Gold
-        Me.EditBtn.Location = New System.Drawing.Point(466, 255)
+        Me.EditBtn.FlatAppearance.BorderSize = 0
+        Me.EditBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.EditBtn.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EditBtn.Location = New System.Drawing.Point(516, 255)
         Me.EditBtn.Name = "EditBtn"
-        Me.EditBtn.Size = New System.Drawing.Size(75, 23)
+        Me.EditBtn.Size = New System.Drawing.Size(128, 32)
         Me.EditBtn.TabIndex = 25
         Me.EditBtn.Text = "Edit"
         Me.EditBtn.UseVisualStyleBackColor = False
@@ -344,9 +342,12 @@ Partial Class student
         'DeleteBtn
         '
         Me.DeleteBtn.BackColor = System.Drawing.Color.Gold
-        Me.DeleteBtn.Location = New System.Drawing.Point(590, 255)
+        Me.DeleteBtn.FlatAppearance.BorderSize = 0
+        Me.DeleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.DeleteBtn.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DeleteBtn.Location = New System.Drawing.Point(719, 255)
         Me.DeleteBtn.Name = "DeleteBtn"
-        Me.DeleteBtn.Size = New System.Drawing.Size(75, 23)
+        Me.DeleteBtn.Size = New System.Drawing.Size(128, 32)
         Me.DeleteBtn.TabIndex = 26
         Me.DeleteBtn.Text = "Delete"
         Me.DeleteBtn.UseVisualStyleBackColor = False
@@ -354,9 +355,12 @@ Partial Class student
         'ResetBtn
         '
         Me.ResetBtn.BackColor = System.Drawing.Color.Gold
-        Me.ResetBtn.Location = New System.Drawing.Point(717, 255)
+        Me.ResetBtn.FlatAppearance.BorderSize = 0
+        Me.ResetBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ResetBtn.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ResetBtn.Location = New System.Drawing.Point(917, 255)
         Me.ResetBtn.Name = "ResetBtn"
-        Me.ResetBtn.Size = New System.Drawing.Size(75, 23)
+        Me.ResetBtn.Size = New System.Drawing.Size(128, 32)
         Me.ResetBtn.TabIndex = 27
         Me.ResetBtn.Text = "Reset"
         Me.ResetBtn.UseVisualStyleBackColor = False
@@ -367,7 +371,7 @@ Partial Class student
         Me.Button5.FlatAppearance.BorderSize = 0
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button5.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.Location = New System.Drawing.Point(521, 331)
+        Me.Button5.Location = New System.Drawing.Point(596, 328)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(128, 32)
         Me.Button5.TabIndex = 28
@@ -376,30 +380,90 @@ Partial Class student
         '
         'PictureBox3
         '
-        Me.PictureBox3.Image = Global.WindowsApplication1.My.Resources.Resources.closei
-        Me.PictureBox3.Location = New System.Drawing.Point(655, 330)
+        Me.PictureBox3.Image = Global.WindowsApplication1.My.Resources.Resources.icons8_refresh_60_removebg_preview
+        Me.PictureBox3.Location = New System.Drawing.Point(734, 329)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(36, 33)
+        Me.PictureBox3.Size = New System.Drawing.Size(38, 31)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox3.TabIndex = 52
         Me.PictureBox3.TabStop = False
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.WindowsApplication1.My.Resources.Resources.closei
+        Me.PictureBox2.Location = New System.Drawing.Point(795, 16)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(40, 33)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 51
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox8
+        '
+        Me.PictureBox8.Image = Global.WindowsApplication1.My.Resources.Resources.icons8_admin_settings_male_100
+        Me.PictureBox8.Location = New System.Drawing.Point(27, 297)
+        Me.PictureBox8.Name = "PictureBox8"
+        Me.PictureBox8.Size = New System.Drawing.Size(50, 43)
+        Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox8.TabIndex = 56
+        Me.PictureBox8.TabStop = False
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.Image = Global.WindowsApplication1.My.Resources.Resources.icons8_credit_card_interest_100
+        Me.PictureBox7.Location = New System.Drawing.Point(27, 231)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(50, 43)
+        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox7.TabIndex = 55
+        Me.PictureBox7.TabStop = False
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.Image = Global.WindowsApplication1.My.Resources.Resources.icons8_department_90
+        Me.PictureBox6.Location = New System.Drawing.Point(23, 158)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(50, 43)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox6.TabIndex = 54
+        Me.PictureBox6.TabStop = False
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.Image = Global.WindowsApplication1.My.Resources.Resources.icons8_teacher_100
+        Me.PictureBox5.Location = New System.Drawing.Point(23, 89)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(50, 43)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox5.TabIndex = 53
+        Me.PictureBox5.TabStop = False
+        '
         'PictureBox4
         '
-        Me.PictureBox4.Image = Global.WindowsApplication1.My.Resources.Resources.closei
+        Me.PictureBox4.Image = Global.WindowsApplication1.My.Resources.Resources.icons8_back_arrow_100
         Me.PictureBox4.Location = New System.Drawing.Point(86, 561)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(40, 33)
+        Me.PictureBox4.Size = New System.Drawing.Size(52, 49)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox4.TabIndex = 52
         Me.PictureBox4.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.WindowsApplication1.My.Resources.Resources.plan_removebg_preview
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 10)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(61, 49)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 3
+        Me.PictureBox1.TabStop = False
         '
         'student
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
-        Me.ClientSize = New System.Drawing.Size(934, 621)
+        Me.ClientSize = New System.Drawing.Size(1101, 623)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.ResetBtn)
@@ -430,13 +494,17 @@ Partial Class student
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.StudentDGV, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -473,4 +541,8 @@ Partial Class student
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox8 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
 End Class

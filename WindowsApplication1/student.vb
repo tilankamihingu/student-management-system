@@ -215,4 +215,8 @@ Public Class student
         Obj.Show()
         Me.Hide()
     End Sub
+
+    Private Sub StudentDGV_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles StudentDGV.CellContentClick
+
+    End Sub
 End Class
