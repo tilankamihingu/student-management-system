@@ -50,6 +50,7 @@ Partial Class student
         Me.DeleteBtn = New System.Windows.Forms.Button()
         Me.ResetBtn = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
+        Me.Panel3 = New System.Windows.Forms.Panel()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
@@ -74,7 +75,8 @@ Partial Class student
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.DarkBlue
+        Me.Panel1.BackColor = System.Drawing.Color.Black
+        Me.Panel1.Controls.Add(Me.Panel3)
         Me.Panel1.Controls.Add(Me.PictureBox8)
         Me.Panel1.Controls.Add(Me.PictureBox7)
         Me.Panel1.Controls.Add(Me.PictureBox6)
@@ -107,7 +109,7 @@ Partial Class student
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(83, 244)
+        Me.Label12.Location = New System.Drawing.Point(83, 239)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(67, 30)
         Me.Label12.TabIndex = 10
@@ -120,9 +122,9 @@ Partial Class student
         Me.Label11.ForeColor = System.Drawing.Color.White
         Me.Label11.Location = New System.Drawing.Point(83, 164)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(157, 30)
+        Me.Label11.Size = New System.Drawing.Size(107, 30)
         Me.Label11.TabIndex = 9
-        Me.Label11.Text = "Department"
+        Me.Label11.Text = "Courses"
         '
         'Label10
         '
@@ -131,13 +133,13 @@ Partial Class student
         Me.Label10.ForeColor = System.Drawing.Color.White
         Me.Label10.Location = New System.Drawing.Point(83, 97)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(120, 30)
+        Me.Label10.Size = New System.Drawing.Size(112, 30)
         Me.Label10.TabIndex = 8
-        Me.Label10.Text = "Teachers"
+        Me.Label10.Text = "Lectures"
         '
         'Panel2
         '
-        Me.Panel2.BackColor = System.Drawing.Color.SlateBlue
+        Me.Panel2.BackColor = System.Drawing.Color.RoyalBlue
         Me.Panel2.Controls.Add(Me.Label2)
         Me.Panel2.Controls.Add(Me.PictureBox1)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
@@ -149,13 +151,13 @@ Partial Class student
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(103, 10)
+        Me.Label2.Location = New System.Drawing.Point(76, 16)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(105, 33)
+        Me.Label2.Size = New System.Drawing.Size(164, 30)
         Me.Label2.TabIndex = 6
-        Me.Label2.Text = "Bojuna"
+        Me.Label2.Text = "Code Camp"
         '
         'Panel4
         '
@@ -260,9 +262,9 @@ Partial Class student
         Me.Label7.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(296, 164)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(123, 22)
+        Me.Label7.Size = New System.Drawing.Size(74, 22)
         Me.Label7.TabIndex = 19
-        Me.Label7.Text = "Department"
+        Me.Label7.Text = "Course"
         '
         'DepCb
         '
@@ -378,6 +380,15 @@ Partial Class student
         Me.Button5.Text = "No Due List"
         Me.Button5.UseVisualStyleBackColor = False
         '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.RoyalBlue
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel3.Location = New System.Drawing.Point(0, 64)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(21, 559)
+        Me.Panel3.TabIndex = 57
+        '
         'PictureBox3
         '
         Me.PictureBox3.Image = Global.WindowsApplication1.My.Resources.Resources.icons8_refresh_60_removebg_preview
@@ -401,7 +412,7 @@ Partial Class student
         'PictureBox8
         '
         Me.PictureBox8.Image = Global.WindowsApplication1.My.Resources.Resources.icons8_admin_settings_male_100
-        Me.PictureBox8.Location = New System.Drawing.Point(27, 297)
+        Me.PictureBox8.Location = New System.Drawing.Point(27, 303)
         Me.PictureBox8.Name = "PictureBox8"
         Me.PictureBox8.Size = New System.Drawing.Size(50, 43)
         Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -450,11 +461,11 @@ Partial Class student
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.WindowsApplication1.My.Resources.Resources.plan_removebg_preview
+        Me.PictureBox1.Image = Global.WindowsApplication1.My.Resources.Resources.istockphoto_947663966_612x612
         Me.PictureBox1.Location = New System.Drawing.Point(12, 10)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(61, 49)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 3
         Me.PictureBox1.TabStop = False
         '
@@ -462,7 +473,7 @@ Partial Class student
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.Control
+        Me.BackColor = System.Drawing.Color.WhiteSmoke
         Me.ClientSize = New System.Drawing.Size(1101, 623)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.Button5)
@@ -545,4 +556,5 @@ Partial Class student
     Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
+    Friend WithEvents Panel3 As System.Windows.Forms.Panel
 End Class

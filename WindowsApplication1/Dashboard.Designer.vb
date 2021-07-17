@@ -24,15 +24,12 @@ Partial Class Dashboard
     Private Sub InitializeComponent()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.StdLbl = New System.Windows.Forms.Label()
@@ -50,11 +47,16 @@ Partial Class Dashboard
         Me.FeesLbl = New System.Windows.Forms.Label()
         Me.Panel11 = New System.Windows.Forms.Panel()
         Me.Label14 = New System.Windows.Forms.Label()
+        Me.Panel12 = New System.Windows.Forms.Panel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel5.SuspendLayout()
@@ -64,11 +66,18 @@ Partial Class Dashboard
         Me.Panel9.SuspendLayout()
         Me.Panel10.SuspendLayout()
         Me.Panel11.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel2
         '
-        Me.Panel2.BackColor = System.Drawing.Color.SlateBlue
+        Me.Panel2.BackColor = System.Drawing.Color.RoyalBlue
         Me.Panel2.Controls.Add(Me.Label2)
         Me.Panel2.Controls.Add(Me.PictureBox1)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
@@ -80,27 +89,22 @@ Partial Class Dashboard
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(103, 10)
+        Me.Label2.Location = New System.Drawing.Point(73, 16)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(105, 33)
+        Me.Label2.Size = New System.Drawing.Size(164, 30)
         Me.Label2.TabIndex = 6
-        Me.Label2.Text = "Bojuna"
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.WindowsApplication1.My.Resources.Resources.plan_removebg_preview
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 10)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(61, 49)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 3
-        Me.PictureBox1.TabStop = False
+        Me.Label2.Text = "Code Camp"
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.DarkBlue
+        Me.Panel1.BackColor = System.Drawing.Color.Black
+        Me.Panel1.Controls.Add(Me.Panel12)
+        Me.Panel1.Controls.Add(Me.PictureBox6)
+        Me.Panel1.Controls.Add(Me.PictureBox7)
+        Me.Panel1.Controls.Add(Me.PictureBox4)
+        Me.Panel1.Controls.Add(Me.PictureBox5)
         Me.Panel1.Controls.Add(Me.PictureBox3)
         Me.Panel1.Controls.Add(Me.Label13)
         Me.Panel1.Controls.Add(Me.Label12)
@@ -113,33 +117,23 @@ Partial Class Dashboard
         Me.Panel1.Size = New System.Drawing.Size(243, 623)
         Me.Panel1.TabIndex = 49
         '
-        'PictureBox3
-        '
-        Me.PictureBox3.Image = Global.WindowsApplication1.My.Resources.Resources.closei
-        Me.PictureBox3.Location = New System.Drawing.Point(88, 560)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(40, 33)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox3.TabIndex = 51
-        Me.PictureBox3.TabStop = False
-        '
         'Label13
         '
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.Color.White
-        Me.Label13.Location = New System.Drawing.Point(83, 264)
+        Me.Label13.Location = New System.Drawing.Point(83, 309)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(157, 30)
+        Me.Label13.Size = New System.Drawing.Size(107, 30)
         Me.Label13.TabIndex = 11
-        Me.Label13.Text = "Department"
+        Me.Label13.Text = "Courses"
         '
         'Label12
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(83, 213)
+        Me.Label12.Location = New System.Drawing.Point(83, 243)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(67, 30)
         Me.Label12.TabIndex = 10
@@ -150,7 +144,7 @@ Partial Class Dashboard
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.White
-        Me.Label11.Location = New System.Drawing.Point(81, 156)
+        Me.Label11.Location = New System.Drawing.Point(83, 172)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(113, 30)
         Me.Label11.TabIndex = 9
@@ -161,11 +155,11 @@ Partial Class Dashboard
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(81, 89)
+        Me.Label10.Location = New System.Drawing.Point(81, 97)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(120, 30)
+        Me.Label10.Size = New System.Drawing.Size(112, 30)
         Me.Label10.TabIndex = 8
-        Me.Label10.Text = "Teachers"
+        Me.Label10.Text = "Lectures"
         '
         'Label1
         '
@@ -177,16 +171,6 @@ Partial Class Dashboard
         Me.Label1.Size = New System.Drawing.Size(160, 33)
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "Dashboard"
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = Global.WindowsApplication1.My.Resources.Resources.closei
-        Me.PictureBox2.Location = New System.Drawing.Point(806, 16)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(40, 33)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 50
-        Me.PictureBox2.TabStop = False
         '
         'Panel4
         '
@@ -201,7 +185,7 @@ Partial Class Dashboard
         '
         'Panel3
         '
-        Me.Panel3.BackColor = System.Drawing.Color.SlateBlue
+        Me.Panel3.BackColor = System.Drawing.Color.RoyalBlue
         Me.Panel3.Controls.Add(Me.StdLbl)
         Me.Panel3.Controls.Add(Me.Panel5)
         Me.Panel3.Location = New System.Drawing.Point(296, 98)
@@ -243,7 +227,7 @@ Partial Class Dashboard
         '
         'Panel6
         '
-        Me.Panel6.BackColor = System.Drawing.Color.SlateBlue
+        Me.Panel6.BackColor = System.Drawing.Color.RoyalBlue
         Me.Panel6.Controls.Add(Me.TeacherLbl)
         Me.Panel6.Controls.Add(Me.Panel7)
         Me.Panel6.Location = New System.Drawing.Point(747, 98)
@@ -279,13 +263,13 @@ Partial Class Dashboard
         Me.Label6.ForeColor = System.Drawing.Color.White
         Me.Label6.Location = New System.Drawing.Point(95, 7)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(120, 30)
+        Me.Label6.Size = New System.Drawing.Size(112, 30)
         Me.Label6.TabIndex = 10
-        Me.Label6.Text = "Teachers"
+        Me.Label6.Text = "Lectures"
         '
         'Panel8
         '
-        Me.Panel8.BackColor = System.Drawing.Color.SlateBlue
+        Me.Panel8.BackColor = System.Drawing.Color.RoyalBlue
         Me.Panel8.Controls.Add(Me.DepLbl)
         Me.Panel8.Controls.Add(Me.Panel9)
         Me.Panel8.Location = New System.Drawing.Point(296, 376)
@@ -319,15 +303,15 @@ Partial Class Dashboard
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(72, 7)
+        Me.Label8.Location = New System.Drawing.Point(101, 7)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(167, 30)
+        Me.Label8.Size = New System.Drawing.Size(107, 30)
         Me.Label8.TabIndex = 10
-        Me.Label8.Text = "Departments"
+        Me.Label8.Text = "Courses"
         '
         'Panel10
         '
-        Me.Panel10.BackColor = System.Drawing.Color.SlateBlue
+        Me.Panel10.BackColor = System.Drawing.Color.RoyalBlue
         Me.Panel10.Controls.Add(Me.FeesLbl)
         Me.Panel10.Controls.Add(Me.Panel11)
         Me.Panel10.Location = New System.Drawing.Point(747, 368)
@@ -367,10 +351,90 @@ Partial Class Dashboard
         Me.Label14.TabIndex = 10
         Me.Label14.Text = "Fees Collected"
         '
+        'Panel12
+        '
+        Me.Panel12.BackColor = System.Drawing.Color.RoyalBlue
+        Me.Panel12.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel12.Location = New System.Drawing.Point(0, 64)
+        Me.Panel12.Name = "Panel12"
+        Me.Panel12.Size = New System.Drawing.Size(21, 559)
+        Me.Panel12.TabIndex = 64
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.WindowsApplication1.My.Resources.Resources.closei
+        Me.PictureBox2.Location = New System.Drawing.Point(806, 16)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(40, 33)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 50
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.Image = Global.WindowsApplication1.My.Resources.Resources.icons8_department_90
+        Me.PictureBox6.Location = New System.Drawing.Point(27, 302)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(50, 43)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox6.TabIndex = 63
+        Me.PictureBox6.TabStop = False
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.Image = Global.WindowsApplication1.My.Resources.Resources.icons8_credit_card_interest_100
+        Me.PictureBox7.Location = New System.Drawing.Point(27, 235)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(50, 43)
+        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox7.TabIndex = 62
+        Me.PictureBox7.TabStop = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.Image = Global.WindowsApplication1.My.Resources.Resources.icons8_student_male_64
+        Me.PictureBox4.Location = New System.Drawing.Point(27, 163)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(50, 43)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox4.TabIndex = 60
+        Me.PictureBox4.TabStop = False
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.Image = Global.WindowsApplication1.My.Resources.Resources.icons8_teacher_100
+        Me.PictureBox5.Location = New System.Drawing.Point(27, 89)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(50, 43)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox5.TabIndex = 55
+        Me.PictureBox5.TabStop = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = Global.WindowsApplication1.My.Resources.Resources.icons8_back_arrow_100
+        Me.PictureBox3.Location = New System.Drawing.Point(86, 561)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(52, 49)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox3.TabIndex = 51
+        Me.PictureBox3.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.WindowsApplication1.My.Resources.Resources.istockphoto_947663966_612x612
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 10)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(61, 49)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 3
+        Me.PictureBox1.TabStop = False
+        '
         'Dashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.WhiteSmoke
         Me.ClientSize = New System.Drawing.Size(1101, 623)
         Me.Controls.Add(Me.Panel10)
         Me.Controls.Add(Me.Panel8)
@@ -384,11 +448,8 @@ Partial Class Dashboard
         Me.Text = "Dashboard"
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
         Me.Panel3.ResumeLayout(False)
@@ -407,6 +468,13 @@ Partial Class Dashboard
         Me.Panel10.PerformLayout()
         Me.Panel11.ResumeLayout(False)
         Me.Panel11.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -438,4 +506,9 @@ Partial Class Dashboard
     Friend WithEvents Panel11 As System.Windows.Forms.Panel
     Friend WithEvents Label14 As System.Windows.Forms.Label
     Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
+    Friend WithEvents Panel12 As System.Windows.Forms.Panel
 End Class

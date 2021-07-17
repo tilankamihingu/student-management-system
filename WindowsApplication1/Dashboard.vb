@@ -88,4 +88,8 @@ Public Class Dashboard
     Private Sub StdLbl_Click(sender As Object, e As EventArgs) Handles StdLbl.Click
 
     End Sub
+
+    Private Sub Label8_Click(sender As Object, e As EventArgs) Handles Label8.Click
+
+    End Sub
 End Class

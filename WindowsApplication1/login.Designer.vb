@@ -30,13 +30,14 @@ Partial Class login
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Panel12 = New System.Windows.Forms.Panel()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.Label5 = New System.Windows.Forms.Label()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -51,7 +52,7 @@ Partial Class login
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.DarkBlue
+        Me.Panel1.BackColor = System.Drawing.Color.Black
         Me.Panel1.Location = New System.Drawing.Point(37, 308)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(207, 26)
@@ -61,11 +62,11 @@ Partial Class login
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Century Gothic", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(405, 103)
+        Me.Label2.Location = New System.Drawing.Point(377, 112)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(105, 33)
+        Me.Label2.Size = New System.Drawing.Size(183, 33)
         Me.Label2.TabIndex = 5
-        Me.Label2.Text = "Bojuna"
+        Me.Label2.Text = "Code Camp"
         '
         'UnameTb
         '
@@ -80,15 +81,19 @@ Partial Class login
         Me.PasswordTb.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PasswordTb.Location = New System.Drawing.Point(359, 226)
         Me.PasswordTb.Name = "PasswordTb"
+        Me.PasswordTb.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.PasswordTb.Size = New System.Drawing.Size(212, 27)
         Me.PasswordTb.TabIndex = 7
         '
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.Gold
-        Me.Button1.Location = New System.Drawing.Point(377, 308)
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(395, 302)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(152, 23)
+        Me.Button1.Size = New System.Drawing.Size(128, 32)
         Me.Button1.TabIndex = 8
         Me.Button1.Text = "Login"
         Me.Button1.UseVisualStyleBackColor = False
@@ -113,25 +118,24 @@ Partial Class login
         Me.Label4.TabIndex = 10
         Me.Label4.Text = "Password"
         '
-        'PictureBox2
+        'Label5
         '
-        Me.PictureBox2.Image = Global.WindowsApplication1.My.Resources.Resources.plan_removebg_preview
-        Me.PictureBox2.Location = New System.Drawing.Point(414, 41)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(83, 59)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 4
-        Me.PictureBox2.TabStop = False
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(425, 349)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(60, 22)
+        Me.Label5.TabIndex = 52
+        Me.Label5.Text = "Reset"
         '
-        'PictureBox1
+        'Panel12
         '
-        Me.PictureBox1.Image = Global.WindowsApplication1.My.Resources.Resources.plan_removebg_preview
-        Me.PictureBox1.Location = New System.Drawing.Point(37, 93)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(207, 216)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 2
-        Me.PictureBox1.TabStop = False
+        Me.Panel12.BackColor = System.Drawing.Color.RoyalBlue
+        Me.Panel12.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel12.Location = New System.Drawing.Point(0, 0)
+        Me.Panel12.Name = "Panel12"
+        Me.Panel12.Size = New System.Drawing.Size(21, 380)
+        Me.Panel12.TabIndex = 65
         '
         'PictureBox3
         '
@@ -143,15 +147,25 @@ Partial Class login
         Me.PictureBox3.TabIndex = 51
         Me.PictureBox3.TabStop = False
         '
-        'Label5
+        'PictureBox2
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(425, 349)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(60, 22)
-        Me.Label5.TabIndex = 52
-        Me.Label5.Text = "Reset"
+        Me.PictureBox2.Image = Global.WindowsApplication1.My.Resources.Resources.istockphoto_947663966_612x612
+        Me.PictureBox2.Location = New System.Drawing.Point(414, 41)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(83, 68)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 4
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.WindowsApplication1.My.Resources.Resources.istockphoto_1299219464_612x612
+        Me.PictureBox1.Location = New System.Drawing.Point(37, 93)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(207, 216)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 2
+        Me.PictureBox1.TabStop = False
         '
         'login
         '
@@ -159,6 +173,7 @@ Partial Class login
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(629, 380)
+        Me.Controls.Add(Me.Panel12)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.Label4)
@@ -175,9 +190,9 @@ Partial Class login
         Me.Name = "login"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "login"
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -194,4 +209,5 @@ Partial Class login
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Panel12 As System.Windows.Forms.Panel
 End Class
