@@ -135,7 +135,7 @@ Public Class Teachers
     End Sub
 
     Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
-        Dim Obj = New login()
+        Dim Obj = New controls()
         Obj.Show()
         Me.Hide()
     End Sub

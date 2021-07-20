@@ -25,8 +25,8 @@
         If UnameTb.Text = "" Or PasswordTb.Text = "" Then
             MsgBox("Enter Username and Password")
 
-        ElseIf UnameTb.Text = "Admin" And PasswordTb.Text = "Password" Then
-            Dim Obj = New student
+        ElseIf UnameTb.Text = "admin" And PasswordTb.Text = "password" Then
+            Dim Obj = New controls
             Obj.Show()
             Me.Hide()
         Else

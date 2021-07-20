@@ -14,3 +14,4 @@ C:\Users\Click\OneDrive\Documents\Visual Studio 2012\Projects\WindowsApplication
 C:\Users\Click\OneDrive\Documents\Visual Studio 2012\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.xml
 C:\Users\Click\OneDrive\Documents\Visual Studio 2012\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.pdb
 C:\Users\Click\OneDrive\Documents\Visual Studio 2012\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Dashboard.resources
+C:\Users\Click\OneDrive\Documents\Visual Studio 2012\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.controls.resources
