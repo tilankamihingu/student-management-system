@@ -1,6 +1,7 @@
 ﻿Public Class controls
 
     Private Sub DashboardToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DashboardToolStripMenuItem.Click
+
         Dim Obj = New Dashboard()
         Obj.Show()
         Me.Hide()

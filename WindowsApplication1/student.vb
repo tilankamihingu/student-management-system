@@ -219,4 +219,8 @@ Public Class student
     Private Sub StudentDGV_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles StudentDGV.CellContentClick
 
     End Sub
+
+    Private Sub DepCb_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DepCb.SelectedIndexChanged
+
+    End Sub
 End Class

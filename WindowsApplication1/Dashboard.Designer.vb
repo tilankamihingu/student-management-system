@@ -55,6 +55,7 @@ Partial Class Dashboard
         Me.FeesLbl = New System.Windows.Forms.Label()
         Me.Panel11 = New System.Windows.Forms.Panel()
         Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -179,7 +180,7 @@ Partial Class Dashboard
         'PictureBox3
         '
         Me.PictureBox3.Image = Global.WindowsApplication1.My.Resources.Resources.icons8_back_arrow_100
-        Me.PictureBox3.Location = New System.Drawing.Point(86, 561)
+        Me.PictureBox3.Location = New System.Drawing.Point(99, 561)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(52, 49)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -204,9 +205,9 @@ Partial Class Dashboard
         Me.Label12.ForeColor = System.Drawing.Color.White
         Me.Label12.Location = New System.Drawing.Point(83, 243)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(67, 30)
+        Me.Label12.Size = New System.Drawing.Size(129, 30)
         Me.Label12.TabIndex = 10
-        Me.Label12.Text = "Fees"
+        Me.Label12.Text = "Payments"
         '
         'Label11
         '
@@ -430,12 +431,24 @@ Partial Class Dashboard
         Me.Label14.TabIndex = 10
         Me.Label14.Text = "Fees Collected"
         '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.Black
+        Me.Label4.Location = New System.Drawing.Point(903, 593)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(186, 17)
+        Me.Label4.TabIndex = 52
+        Me.Label4.Text = "powered by tilankamihingu"
+        '
         'Dashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.WhiteSmoke
         Me.ClientSize = New System.Drawing.Size(1101, 623)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Panel10)
         Me.Controls.Add(Me.Panel8)
         Me.Controls.Add(Me.Panel6)
@@ -476,6 +489,7 @@ Partial Class Dashboard
         Me.Panel11.ResumeLayout(False)
         Me.Panel11.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
@@ -511,4 +525,5 @@ Partial Class Dashboard
     Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
     Friend WithEvents Panel12 As System.Windows.Forms.Panel
+    Friend WithEvents Label4 As System.Windows.Forms.Label
 End Class

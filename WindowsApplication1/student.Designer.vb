@@ -23,13 +23,21 @@ Partial Class student
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.StnameTb = New System.Windows.Forms.TextBox()
@@ -50,27 +58,19 @@ Partial Class student
         Me.DeleteBtn = New System.Windows.Forms.Button()
         Me.ResetBtn = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
-        Me.Panel3 = New System.Windows.Forms.Panel()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
-        Me.Panel2.SuspendLayout()
-        Me.Panel4.SuspendLayout()
-        CType(Me.StudentDGV, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel4.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.StudentDGV, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -93,6 +93,65 @@ Partial Class student
         Me.Panel1.Size = New System.Drawing.Size(243, 623)
         Me.Panel1.TabIndex = 0
         '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.RoyalBlue
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel3.Location = New System.Drawing.Point(0, 64)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(21, 559)
+        Me.Panel3.TabIndex = 57
+        '
+        'PictureBox8
+        '
+        Me.PictureBox8.Image = Global.WindowsApplication1.My.Resources.Resources.icons8_admin_settings_male_100
+        Me.PictureBox8.Location = New System.Drawing.Point(27, 303)
+        Me.PictureBox8.Name = "PictureBox8"
+        Me.PictureBox8.Size = New System.Drawing.Size(50, 43)
+        Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox8.TabIndex = 56
+        Me.PictureBox8.TabStop = False
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.Image = Global.WindowsApplication1.My.Resources.Resources.icons8_credit_card_interest_100
+        Me.PictureBox7.Location = New System.Drawing.Point(27, 231)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(50, 43)
+        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox7.TabIndex = 55
+        Me.PictureBox7.TabStop = False
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.Image = Global.WindowsApplication1.My.Resources.Resources.icons8_department_90
+        Me.PictureBox6.Location = New System.Drawing.Point(23, 158)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(50, 43)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox6.TabIndex = 54
+        Me.PictureBox6.TabStop = False
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.Image = Global.WindowsApplication1.My.Resources.Resources.icons8_teacher_100
+        Me.PictureBox5.Location = New System.Drawing.Point(23, 89)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(50, 43)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox5.TabIndex = 53
+        Me.PictureBox5.TabStop = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.Image = Global.WindowsApplication1.My.Resources.Resources.icons8_back_arrow_100
+        Me.PictureBox4.Location = New System.Drawing.Point(86, 561)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(52, 49)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox4.TabIndex = 52
+        Me.PictureBox4.TabStop = False
+        '
         'Label13
         '
         Me.Label13.AutoSize = True
@@ -111,9 +170,9 @@ Partial Class student
         Me.Label12.ForeColor = System.Drawing.Color.White
         Me.Label12.Location = New System.Drawing.Point(83, 239)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(67, 30)
+        Me.Label12.Size = New System.Drawing.Size(129, 30)
         Me.Label12.TabIndex = 10
-        Me.Label12.Text = "Fees"
+        Me.Label12.Text = "Payments"
         '
         'Label11
         '
@@ -159,6 +218,16 @@ Partial Class student
         Me.Label2.TabIndex = 6
         Me.Label2.Text = "Code Camp"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.WindowsApplication1.My.Resources.Resources.istockphoto_947663966_612x612
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 10)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(61, 49)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 3
+        Me.PictureBox1.TabStop = False
+        '
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.White
@@ -169,6 +238,16 @@ Partial Class student
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(858, 64)
         Me.Panel4.TabIndex = 2
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.WindowsApplication1.My.Resources.Resources.closei
+        Me.PictureBox2.Location = New System.Drawing.Point(795, 16)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(40, 33)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 51
+        Me.PictureBox2.TabStop = False
         '
         'Label1
         '
@@ -380,15 +459,6 @@ Partial Class student
         Me.Button5.Text = "No Due List"
         Me.Button5.UseVisualStyleBackColor = False
         '
-        'Panel3
-        '
-        Me.Panel3.BackColor = System.Drawing.Color.RoyalBlue
-        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel3.Location = New System.Drawing.Point(0, 64)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(21, 559)
-        Me.Panel3.TabIndex = 57
-        '
         'PictureBox3
         '
         Me.PictureBox3.Image = Global.WindowsApplication1.My.Resources.Resources.icons8_refresh_60_removebg_preview
@@ -398,76 +468,6 @@ Partial Class student
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox3.TabIndex = 52
         Me.PictureBox3.TabStop = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = Global.WindowsApplication1.My.Resources.Resources.closei
-        Me.PictureBox2.Location = New System.Drawing.Point(795, 16)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(40, 33)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 51
-        Me.PictureBox2.TabStop = False
-        '
-        'PictureBox8
-        '
-        Me.PictureBox8.Image = Global.WindowsApplication1.My.Resources.Resources.icons8_admin_settings_male_100
-        Me.PictureBox8.Location = New System.Drawing.Point(27, 303)
-        Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(50, 43)
-        Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox8.TabIndex = 56
-        Me.PictureBox8.TabStop = False
-        '
-        'PictureBox7
-        '
-        Me.PictureBox7.Image = Global.WindowsApplication1.My.Resources.Resources.icons8_credit_card_interest_100
-        Me.PictureBox7.Location = New System.Drawing.Point(27, 231)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(50, 43)
-        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox7.TabIndex = 55
-        Me.PictureBox7.TabStop = False
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.Image = Global.WindowsApplication1.My.Resources.Resources.icons8_department_90
-        Me.PictureBox6.Location = New System.Drawing.Point(23, 158)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(50, 43)
-        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox6.TabIndex = 54
-        Me.PictureBox6.TabStop = False
-        '
-        'PictureBox5
-        '
-        Me.PictureBox5.Image = Global.WindowsApplication1.My.Resources.Resources.icons8_teacher_100
-        Me.PictureBox5.Location = New System.Drawing.Point(23, 89)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(50, 43)
-        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox5.TabIndex = 53
-        Me.PictureBox5.TabStop = False
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.Image = Global.WindowsApplication1.My.Resources.Resources.icons8_back_arrow_100
-        Me.PictureBox4.Location = New System.Drawing.Point(86, 561)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(52, 49)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox4.TabIndex = 52
-        Me.PictureBox4.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.WindowsApplication1.My.Resources.Resources.istockphoto_947663966_612x612
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 10)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(61, 49)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 3
-        Me.PictureBox1.TabStop = False
         '
         'student
         '
@@ -503,19 +503,19 @@ Partial Class student
         Me.Text = "student"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
-        Me.Panel4.ResumeLayout(False)
-        Me.Panel4.PerformLayout()
-        CType(Me.StudentDGV, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel4.ResumeLayout(False)
+        Me.Panel4.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.StudentDGV, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

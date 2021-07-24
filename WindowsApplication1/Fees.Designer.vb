@@ -38,29 +38,29 @@ Partial Class Fees
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.PayBtn = New System.Windows.Forms.Button()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PayBtn = New System.Windows.Forms.Button()
         CType(Me.FeesDGV, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
-        Me.Panel2.SuspendLayout()
-        Me.Panel1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel2.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label12
@@ -81,9 +81,9 @@ Partial Class Fees
         Me.Label11.ForeColor = System.Drawing.Color.White
         Me.Label11.Location = New System.Drawing.Point(81, 169)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(157, 30)
+        Me.Label11.Size = New System.Drawing.Size(107, 30)
         Me.Label11.TabIndex = 9
-        Me.Label11.Text = "Department"
+        Me.Label11.Text = "Courses"
         '
         'Label10
         '
@@ -226,6 +226,16 @@ Partial Class Fees
         Me.Panel4.Size = New System.Drawing.Size(858, 64)
         Me.Panel4.TabIndex = 30
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.WindowsApplication1.My.Resources.Resources.closei
+        Me.PictureBox2.Location = New System.Drawing.Point(806, 16)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(40, 33)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 52
+        Me.PictureBox2.TabStop = False
+        '
         'Label2
         '
         Me.Label2.AutoSize = True
@@ -248,6 +258,16 @@ Partial Class Fees
         Me.Panel2.Size = New System.Drawing.Size(243, 64)
         Me.Panel2.TabIndex = 1
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.WindowsApplication1.My.Resources.Resources.istockphoto_947663966_612x612
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 10)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(61, 49)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 3
+        Me.PictureBox1.TabStop = False
+        '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Black
@@ -268,19 +288,6 @@ Partial Class Fees
         Me.Panel1.Size = New System.Drawing.Size(243, 623)
         Me.Panel1.TabIndex = 29
         '
-        'PayBtn
-        '
-        Me.PayBtn.BackColor = System.Drawing.Color.Gold
-        Me.PayBtn.FlatAppearance.BorderSize = 0
-        Me.PayBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.PayBtn.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PayBtn.Location = New System.Drawing.Point(630, 249)
-        Me.PayBtn.Name = "PayBtn"
-        Me.PayBtn.Size = New System.Drawing.Size(128, 32)
-        Me.PayBtn.TabIndex = 48
-        Me.PayBtn.Text = "Pay"
-        Me.PayBtn.UseVisualStyleBackColor = False
-        '
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.RoyalBlue
@@ -289,16 +296,6 @@ Partial Class Fees
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(21, 559)
         Me.Panel3.TabIndex = 62
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = Global.WindowsApplication1.My.Resources.Resources.closei
-        Me.PictureBox2.Location = New System.Drawing.Point(806, 16)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(40, 33)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 52
-        Me.PictureBox2.TabStop = False
         '
         'PictureBox8
         '
@@ -350,15 +347,18 @@ Partial Class Fees
         Me.PictureBox3.TabIndex = 53
         Me.PictureBox3.TabStop = False
         '
-        'PictureBox1
+        'PayBtn
         '
-        Me.PictureBox1.Image = Global.WindowsApplication1.My.Resources.Resources.istockphoto_947663966_612x612
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 10)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(61, 49)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 3
-        Me.PictureBox1.TabStop = False
+        Me.PayBtn.BackColor = System.Drawing.Color.Gold
+        Me.PayBtn.FlatAppearance.BorderSize = 0
+        Me.PayBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.PayBtn.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PayBtn.Location = New System.Drawing.Point(630, 249)
+        Me.PayBtn.Name = "PayBtn"
+        Me.PayBtn.Size = New System.Drawing.Size(128, 32)
+        Me.PayBtn.TabIndex = 48
+        Me.PayBtn.Text = "Pay"
+        Me.PayBtn.UseVisualStyleBackColor = False
         '
         'Fees
         '
@@ -386,17 +386,17 @@ Partial Class Fees
         CType(Me.FeesDGV, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

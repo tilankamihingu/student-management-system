@@ -128,4 +128,8 @@ Public Class Fees
         Obj.Show()
         Me.Hide()
     End Sub
+
+    Private Sub StNameTb_TextChanged(sender As Object, e As EventArgs) Handles StNameTb.TextChanged
+
+    End Sub
 End Class
